@@ -4,7 +4,8 @@ export default function Equipe() {
 
   return (
     <div>
-      <h1>MEMBROS DO GRUPO</h1>
+      
+      <h1>Página dos Integrantes</h1>
     </div>
   );
 }

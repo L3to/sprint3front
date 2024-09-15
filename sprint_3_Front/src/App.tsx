@@ -6,8 +6,8 @@ import { GlobalStyle } from "./style/styled";
 function App() {
     return (
         <div>
-        <Cabecalho/>
         <GlobalStyle/>
+        <Cabecalho/>
             <Outlet/>
         <Rodape/>
         </div>
