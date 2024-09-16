@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { LoginSignup } from "../../components/LoginSignup/LoginSignup";
 
 
 export default function Login(){
@@ -6,6 +6,7 @@ export default function Login(){
 
     return(
       <div>
+        <LoginSignup/>
     </div>
     );
   }

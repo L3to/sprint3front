@@ -16,15 +16,7 @@ body {
   font-size: 16px;
   color: #333;
 }
-body {
-  display: table;
-  width: 100%; 
-}
-
-body > Footer {
-   display: table-row;
-}
-`;
+`
 
 // FOOTER
 export const Footer = styled.footer`
@@ -37,6 +29,7 @@ export const Footer = styled.footer`
   margin-top: auto;  
   left: 0;
   top: 100rem;
+  min-height: 10vh; 
 `;
 
 export const Divisoria = styled.div`
@@ -91,22 +84,36 @@ export const SubHeader = styled.div`
 // ERROR
 export const Layout404 = styled.div`
   display: flex;
+  justify-content: center; 
+  align-items: center;
   font-family: "Poppins", sans-serif;
   background-color: #2a56c0;
   color: white;
   text-align: center;
   font-size: 1.5em;
-  height: 100vh;
+  height: 100vh; 
   flex-direction: column;
-  align-items: center;
+
   & img {
     width: 40rem;
+    max-width: 100%; 
   }
-  & a {
+
+  & 
+  .btnhover {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    border: 2px solid white; 
+    border-radius: 5px; 
+  }
+  .btnhover:hover {
+    background-color: white;
+    color: #2a56c0;
+  }
+  h1{
+    margin-bottom: 1rem;
   }
 `;
 //INTEGRANTES
