@@ -1,4 +1,4 @@
-import ConsertoCarro from "../../assets/img/consertocarro.jpg"
+import ConsertoCarro from "../../assets/img/cardamage.jpg"
 import Computador from "../../assets/img/hcomputador.png"
 import Equipe from "../../assets/img/equipe.jpg"
 import { DashboardLayout } from "../../style/styled";
@@ -10,7 +10,7 @@ export default function Dashboard(){
         <DashboardLayout>
         <img src={Computador} alt="" />
         <img src={Computador} alt="" />
-        <img src={ConsertoCarro} alt="" />
+        <img src={cardamage} alt="" />
         <img src={Equipe} alt="" />
         <img src={Chatbot} alt="" />
         
