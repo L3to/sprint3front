@@ -22,10 +22,9 @@ body {
 export const Footer = styled.footer`
   display: flex;
   justify-content: space-around;
-  background-color: #F2F0EB; 
+  background-color: #f5f5f5; 
   text-align: center;
   color: white;
-  position: fixed;
   width: 100%;
   bottom: 0;
 `
@@ -52,19 +51,20 @@ export const MenuItem = styled.li`
 `
 //HEADER
 export const Header = styled.header`
-  background-color: #F2F0EB;
+  background-color: #00A2FC;
   text-align: center;
-  color: white;
   .Logo_Header{
     width: 12vw;
     padding: 1vw;
-  }	
+    filter: brightness(0) invert(1);
+  }
 `
 export const SubHeader = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top, #D1D6DB, #F2F0EB);  
+  background-color: #f5f5f5;
+  padding: 0.5rem;
   height: 3.5rem;
 
   &
@@ -217,10 +217,24 @@ export const DecoracaoDevs2 = styled.div`
 export const HomeLayout = styled.div`
   display: flex;
   padding: 2rem;
+  padding-bottom: 0;
   flex-direction: column;
   .Rotas{
     text-decoration: none;
     color: #00428C;
+  }
+`;
+export const Faixa = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  color: #27a1da;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  & h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
   }
 `;
 

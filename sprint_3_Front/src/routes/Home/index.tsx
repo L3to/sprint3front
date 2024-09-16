@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HomeLayout } from "../../style/styled";
+import { Faixa, HomeLayout } from "../../style/styled";
 import Dashboard from "../../components/Dashboard/Dashboard";
 
 export default function Home(){
@@ -16,6 +16,12 @@ export default function Home(){
         </p>
         <Dashboard />
       </HomeLayout>
+      <Faixa>
+      <div>
+      <h2>SERVIÇOS DISPONÍVEIS</h2>
+    </div>
+    </Faixa>
+    
     </div>
     );
   }
