@@ -21,7 +21,7 @@ export default function BotoesCentroAutomotivo(){
       <div>
       <Link className='botao' to="/oleo-filtro">
         <img src={Oleo} alt="Óleo" />
-        <p>Óleo </p>
+        <p>Óleo</p>
       </Link>
       </div>
       <div>

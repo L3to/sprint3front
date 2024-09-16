@@ -20,25 +20,30 @@ body {
 
 // FOOTER
 export const Footer = styled.footer`
-  display: flex;
+   display: flex;
   justify-content: space-around;
   background-color: #f5f5f5;
   text-align: center;
-  color: white;
+  padding: 1rem;
   width: 100%;
-  bottom: 0;
+  margin-top: auto;  
+  left: 0;
+  top: 100rem;
 `;
 
-export const MenuList = styled.ul`
+export const Divisoria = styled.div`
+  border-left: 1px solid #27a1da;
+  height: 2rem;
+  margin: 0 1rem;
+  `;
+
+
+export const RodapeMenuItens = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
-`;
-
-export const MenuItem = styled.li`
-  display: inline;
   & a {
     color: #27a1da;
     font-weight: lighter;
@@ -47,6 +52,8 @@ export const MenuItem = styled.li`
     display: block;
   }
 `;
+
+
 //HEADER
 export const Header = styled.header`
   background-color: #00a2fc;
@@ -70,9 +77,6 @@ export const SubHeader = styled.div`
   }
 `;
 
-export const Nav = styled.nav`
-  padding: 10px;
-`;
 
 // ERROR
 export const Layout404 = styled.div`
@@ -239,6 +243,7 @@ export const BotaoCentroAutomotivo = styled.div`
     align-items: center;
     gap: 5%;
     padding: 2rem;
+  
     & 
     img {
       width: 3rem;
@@ -247,6 +252,7 @@ export const BotaoCentroAutomotivo = styled.div`
       
     }
     .botao{
+      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -255,12 +261,12 @@ export const BotaoCentroAutomotivo = styled.div`
       color: #00428c;
       font-weight: bold;
       padding: 1rem;
-      border: 2px solid #00428c;
-      border-radius: 1rem;
+      
     }
     .botao:hover{
       background-color: #00428c;
       color: white;
+      border-radius: 1rem;
       &
       img{
         filter: brightness(0) invert(1);

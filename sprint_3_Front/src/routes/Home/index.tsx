@@ -10,10 +10,10 @@ export default function Home(){
       <div>
       <HomeLayout>
         <p className="Rotas">
-          <Link to="/" className="rotas-link">
+          <Link to="/">
             <b>Home</b>
           </Link>
-          &nbsp;/ Porto Seguro
+          &nbsp;/ Turbina
         </p>
         <Dashboard />
       </HomeLayout>
