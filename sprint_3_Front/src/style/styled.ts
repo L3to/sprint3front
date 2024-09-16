@@ -20,7 +20,7 @@ body {
 
 // FOOTER
 export const Footer = styled.footer`
-   display: flex;
+  display: flex;
   justify-content: space-around;
   background-color: #f5f5f5;
   text-align: center;
@@ -340,36 +340,113 @@ export const DashboardLayout = styled.div`
 
 //LOGIN
 export const BackgroundLogin = styled.div`
+display: flex;
 height: 100vh;
 background: linear-gradient(135deg, #007bff, #0056b3);
+justify-content: center;
+align-items: center;
 `
 export const LoginLayout = styled.div`
-  .login-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top:200px;
-    padding-bottom:30px;
-    &
-    img{
-      width: 50px;
-      height: 50px;
-    }
-    .headerlogin{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      margin-top: 30px;
-    }
-    .texto{
-      color: #3c009d
-      font-size: 30px;
-      font-weight: 70;
-    }
-    }
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  max-width: 70rem;
+  height: auto; 
+  padding: 2rem; 
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box; 
+}
+
+.login-container img {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+}
+
+.headerlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.texto {
+  color: #007bff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.underline {
+  width: 8rem;
+  height: 0.5rem;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #eaeaea;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.input input {
+  height: 5rem;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  color: #797979;
+}
+
+.forgot-password {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.forgot-password span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 `;
