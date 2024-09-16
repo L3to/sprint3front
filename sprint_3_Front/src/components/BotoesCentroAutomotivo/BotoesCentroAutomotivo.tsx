@@ -11,6 +11,7 @@ import { BotaoCentroAutomotivo } from '../../style/styled';
 export default function BotoesCentroAutomotivo(){
   return(
     <div>
+      
       <BotaoCentroAutomotivo>
       <div>
       <Link className='botao' to="/direcao-pneus">

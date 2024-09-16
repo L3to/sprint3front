@@ -16,6 +16,14 @@ body {
   font-size: 16px;
   color: #333;
 }
+body {
+  display: table;
+  width: 100%; 
+}
+
+body > Footer {
+   display: table-row;
+}
 `;
 
 // FOOTER
@@ -74,6 +82,8 @@ export const SubHeader = styled.div`
 
   & img {
     bottom: 2vw;
+    width: 8vw;
+    cursor: pointer;
   }
 `;
 
@@ -222,6 +232,10 @@ export const HomeLayout = styled.div`
     color: #00428c;
     font-size: 120%;
   }
+  .Rotas a {
+    color: #00428c;
+    text-decoration: none;
+  }
 `;
 export const Faixa = styled.div`
   display: flex;
@@ -252,7 +266,7 @@ export const BotaoCentroAutomotivo = styled.div`
       
     }
     .botao{
-      
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -313,4 +327,5 @@ export const DashboardLayout = styled.div`
   img:nth-child(5) {
     grid-area: item5;
   }
+ 
 `;
