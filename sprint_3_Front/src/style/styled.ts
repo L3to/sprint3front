@@ -64,8 +64,9 @@ export const SubHeader = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top, #EBEFF2, #F2F0EB);  
-  height: 4vw;
+  background: linear-gradient(to top, #D1D6DB, #F2F0EB);  
+  height: 3.5rem;
+
   &
   img{
     bottom: 2vw;
@@ -208,5 +209,58 @@ export const DecoracaoDevs2 = styled.div`
   z-index: -9999;
   & img{
     width: 30vw;
+  }
+`;
+
+//HOME
+
+export const HomeLayout = styled.div`
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  .Rotas{
+    text-decoration: none;
+    color: #00428C;
+  }
+`;
+
+//DASHBOARD
+
+export const DashboardLayout = styled.div`
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2em;
+  padding: 2rem;
+
+  grid-template-areas: 
+    "item1 item2 item5"
+    "item3 item4 item5";
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  img:nth-child(1) {
+    grid-area: item1;
+    border-radius: 2rem;
+  }
+
+  img:nth-child(2) {
+    grid-area: item2;
+  }
+
+  img:nth-child(3) {
+    grid-area: item3;
+  }
+
+  img:nth-child(4) {
+    grid-area: item4;
+  }
+
+  img:nth-child(5) {
+    grid-area: item5;
+    border-radius: 2rem;
   }
 `;
