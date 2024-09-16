@@ -68,7 +68,6 @@ export const SubHeader = styled.div`
   height: 4vw;
   &
   img{
-    width: 10vw;
     bottom: 2vw;
   }
 `
@@ -183,11 +182,31 @@ export const CarrosselLayout = styled.div`
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #00428C;
-    font-weight: lighter;
+    font-weight: bold;
   }
   h2{
     font-size: 1.5rem;
   }
-
 `
 
+export const DecoracaoDevs = styled.div`
+  position: absolute;
+  top: 15rem;
+  right: 0;
+  opacity: 0.8;
+  z-index: -9999;
+  & img{
+    width: 30vw;
+  }
+`;
+
+export const DecoracaoDevs2 = styled.div`
+  position: absolute;
+  top: 15rem;
+  left: 0;
+  opacity: 0.8;
+  z-index: -9999;
+  & img{
+    width: 30vw;
+  }
+`;
