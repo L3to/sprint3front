@@ -1,11 +1,16 @@
+import { Carrossel } from "../../components/Carrossel/Carrosel";
+
+import { listaCarrosel } from "../../listaCarrossel";
+import { CarrosselLayout } from "../../style/styled";
 
 export default function Equipe() {
   document.title = "Nossa Equipe";
-
   return (
     <div>
-      
-      <h1>Página dos Integrantes</h1>
+      <CarrosselLayout>
+      <h1>NOSSA EQUIPE</h1>
+      <Carrossel imagens={listaCarrosel}/>
+      </CarrosselLayout>
     </div>
   );
 }

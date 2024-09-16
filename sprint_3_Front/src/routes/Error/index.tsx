@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Rodape from '../../components/Rodape/Rodape';
-import errorImage from '../../img/404_image.png';
+import errorImage from '../../assets/img/404_image.png';
 import { GlobalStyle, Layout404 } from '../../style/styled';
 
 export default function Error() {

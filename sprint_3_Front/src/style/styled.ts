@@ -84,4 +84,30 @@ export const Layout404 = styled.div`
     display: block;
   }
 `
+//INTEGRANTES
+export const CarroselIntegrantes = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  & img {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem #333;
+    width: 100%;
+    height: 100%;}
+  `
+export const CarrosselLayout = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  &
+  h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+`
 

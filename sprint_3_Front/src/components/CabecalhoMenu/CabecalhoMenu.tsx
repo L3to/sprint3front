@@ -6,7 +6,7 @@ export default function CabecalhoMenu(){
       <Nav>
         <MenuList>
             <MenuItem> <Link to="/">Home</Link></MenuItem>
-            <MenuItem><Link to="/nossaequipe">Nossa Esquipe</Link></MenuItem>
+            <MenuItem><Link to="/nossaequipe">Nossa Equipe</Link></MenuItem>
         </MenuList>
       </Nav>
     );
