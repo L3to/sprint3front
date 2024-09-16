@@ -1,10 +1,12 @@
 import { Header } from "../../style/styled";
 import CabecalhoMenu from "../CabecalhoMenu/CabecalhoMenu";
+import PortoLogo from "../../assets/img/porto_logo.png";
+import { Link } from "react-router-dom"; // Import the Link component from the appropriate library
 
 export default function Cabecalho(){
   return(
     <Header>
-      <h1>Cabeçalho</h1>
+      <Link to="/"><img src={PortoLogo} alt="Logo Porto" className="Logo_Header"/></Link>
       <CabecalhoMenu/>
     </Header>
   );

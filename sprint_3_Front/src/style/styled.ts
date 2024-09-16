@@ -43,21 +43,36 @@ export const MenuItem = styled.li`
   &
   a{
     color:#27a1da;
-    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
   }
   
 `
-
+//HEADER
 export const Header = styled.header`
-  background-color: #4CAF50;
-  padding: 20px;
+  background-color: #F2F0EB;
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  .Logo_Header{
+    width: 12vw;
+    padding: 1vw;
+  }	
 `
+export const SubHeader = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to top, #EBEFF2, #F2F0EB);  
+  height: 4vw;
+  &
+  img{
+    width: 10vw;
+    bottom: 2vw;
+  }
+`
+
 export const Nav = styled.nav`
   padding: 10px;
 `
@@ -142,7 +157,7 @@ export const CarroselIntegrantes = styled.div`
     
     & .descricao {
     position: absolute;
-    bottom: 0;
+    bottom: 6%;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -162,10 +177,16 @@ export const CarrosselLayout = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 5rem;
+  
   &
   h1{
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: #00428C;
+    font-weight: lighter;
+  }
+  h2{
+    font-size: 1.5rem;
   }
 
 `

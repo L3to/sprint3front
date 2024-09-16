@@ -27,12 +27,13 @@ export const Carrossel = ({ imagens }: CarrosselProps) => {
       <CarroselIntegrantes>
         <BsArrowLeftCircleFill className='arrow arrow-left' onClick={slideAnterior} />
         {imagens.map((item: CarrosselLista, idx: number) => (
-          <img
+          <div key={idx} className={slide === idx ? 'slide' : 'slide slide-escondido'}>
+          <img className='slide'
             src={item.imagem}
             alt={`Imagem ${idx}`}
-            key={idx}
-            className={slide === idx ? 'slide' : 'slide slide-escondido'}
           />
+          <div className='descricao'>{item.descricao}</div>
+          </div>
         ))}
         <BsArrowRightCircleFill className='arrow arrow-right' onClick={proximoSlide} />
         <span className='indicadores'>
