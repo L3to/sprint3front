@@ -35,9 +35,12 @@ export default function Home() {
             {mostrarBoasVindas && usuarioLogado && `Bem-vindo, ${usuarioLogado}!`}
             {mostrarBoasVindas && !usuarioLogado && <span className="invisivel">Bem-vindo!</span>}
           </b>
-          {usuarioLogado && mostrarBoasVindas && <button onClick={realizarLogout}>Sair</button>}
+          &nbsp;
+          {usuarioLogado && mostrarBoasVindas && <a className="btnSair" onClick={realizarLogout}>Sair?</a>}
         </p>
+        <div className="dashboard">
         <Dashboard />
+        </div>
       </HomeLayout>
       <Faixa>
         <div>

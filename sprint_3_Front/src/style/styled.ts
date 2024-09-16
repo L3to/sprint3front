@@ -248,6 +248,18 @@ export const HomeLayout = styled.div`
   .invisivel {
   visibility: hidden;
 }
+.btnSair{
+  color: #00428c;
+  cursor: pointer;
+}
+.btnSair:hover{
+  color: #00428c;
+  text-decoration: underline;
+}
+.dashboard{
+  display: flex;
+  justify-content: center;
+}
 `;
 export const Faixa = styled.div`
   display: flex;
@@ -303,16 +315,16 @@ export const BotaoCentroAutomotivo = styled.div`
 //DASHBOARD
 
 export const DashboardLayout = styled.div`
- display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
   padding: 2rem;
+  max-width: 1900px;
 
   grid-template-areas:
     "item1 item2 item5"
     "item3 item4 item5";
 
-  /* Configuração das imagens */
   .container-imagem {
     position: relative;
     width: 100%;
@@ -368,15 +380,34 @@ export const DashboardLayout = styled.div`
 
   .informacoes {
     text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+    
   }
 
-  /* Efeito de hover nas imagens */
   .container-imagem:hover img {
     transform: scale(1.1);
   }
-
+  
   .container-imagem:hover .overlay {
     opacity: 1;
+  }
+`;
+export const AvisoLogin = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .aviso{
+  z-index: 999999;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
   }
 `;
 
