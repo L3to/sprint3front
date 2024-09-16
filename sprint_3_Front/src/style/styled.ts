@@ -116,6 +116,7 @@ export const Layout404 = styled.div`
     margin-bottom: 1rem;
   }
 `;
+
 //INTEGRANTES
 export const CarroselIntegrantes = styled.div`
   display: flex;
@@ -335,4 +336,40 @@ export const DashboardLayout = styled.div`
     grid-area: item5;
   }
  
+`;
+
+//LOGIN
+export const BackgroundLogin = styled.div`
+height: 100vh;
+background: linear-gradient(135deg, #007bff, #0056b3);
+`
+export const LoginLayout = styled.div`
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:200px;
+    padding-bottom:30px;
+    &
+    img{
+      width: 50px;
+      height: 50px;
+    }
+    .headerlogin{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      margin-top: 30px;
+    }
+    .texto{
+      color: #3c009d
+      font-size: 30px;
+      font-weight: 70;
+    }
+    }
 `;
