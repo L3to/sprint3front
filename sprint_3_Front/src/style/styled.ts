@@ -29,7 +29,7 @@ export const Footer = styled.footer`
   margin-top: auto;  
   left: 0;
   top: 100rem;
-  min-height: 10vh; 
+  min-height: 8vh; 
 `;
 
 export const Divisoria = styled.div`
@@ -57,10 +57,11 @@ export const RodapeMenuItens = styled.ul`
 
 //HEADER
 export const Header = styled.header`
+  position: sticky;
   background-color: #00a2fc;
   text-align: center;
   .Logo_Header {
-    width: 12vw;
+    width: 150px;
     padding: 1vw;
     filter: brightness(0) invert(1);
   }
@@ -74,8 +75,8 @@ export const SubHeader = styled.div`
   height: 3.5rem;
 
   & img {
-    bottom: 2vw;
-    width: 8vw;
+    bottom: 20px;
+    width: 180px;
     cursor: pointer;
   }
 `;
@@ -341,8 +342,8 @@ export const DashboardLayout = styled.div`
 //LOGIN
 export const BackgroundLogin = styled.div`
 display: flex;
-height: 100vh;
-background: linear-gradient(135deg, #007bff, #0056b3);
+height: 80vh;
+background: linear-gradient(135deg, #007bff 0%, #0062cc 50%, #003d99 100%);;
 justify-content: center;
 align-items: center;
 `
@@ -350,103 +351,89 @@ export const LoginLayout = styled.div`
 .login-container {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  width: 100%; 
-  max-width: 70rem;
-  height: auto; 
-  padding: 2rem; 
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-sizing: border-box; 
+  background: white;
+  margin:auto;
+  width: 900px;
+  padding-bottom: 30px;
+  border-radius: 10px;
 }
-
-.login-container img {
-  width: 6rem;
-  height: 6rem;
-  padding: 1rem;
-}
-
 .headerlogin {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
   width: 100%;
-  margin-top: 2rem;
+  gap: 10px;
+  margin-top: 30px;
 }
-
 .texto {
-  color: #007bff;
-  font-size: 2.5rem;
+  font-size: 48px;
   font-weight: bold;
-  text-align: center;
+  color: #0056b3;
 }
-
 .underline {
-  width: 8rem;
-  height: 0.5rem;
-  background-color: #007bff;
-  border-radius: 5px;
+  width: 61px;
+  height: 6px;
+  background: #0056b3;
+  border-radius: 10px;
 }
-
 .inputs {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 50rem;
+  gap: 25px;
+  margin-top: 55px;
 }
-
-.input {
+.input{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  width: 480px;
+  height: 80px;
+  margin: auto;
   background: #eaeaea;
-  border-radius: 6px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 0px 20px;
 }
-
-.input input {
-  height: 5rem;
-  width: 100%;
+.input img{
+  margin: 0px 30px;
+  width: 50px;
+  height: 50px;
+}
+.input input{
+  width: 400px;
+  height: 50px;
   border: none;
+  color: white;
   background: transparent;
   outline: none;
-  font-size: 1.5rem;
-  color: #797979;
+  font-size: 24px;
 }
 
 .forgot-password {
-  color: #007bff;
-  font-size: 1.5rem;
-  margin-top: 1rem;
+  font-size: 24px;
+  color: #0056b3;
+  margin-top: 30px;
+  padding-left: 62px;
 }
-
 .forgot-password span {
-  color: #007bff;
   font-weight: bold;
+  cursor: pointer;
 }
-
-.submit-container {
+.submit-container{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  gap: 30px;
+  margin-top: 60px;
 }
-.submit{
+.submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #007bff;
+  width: 220px;
+  height: 60px;
+  background: #0056b3;
+  border-radius: 50px;
+  font-size: 24px;
   color: white;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  font-size: 1.5rem;
+  font-weight: bold;
   cursor: pointer;
 }
 `;
