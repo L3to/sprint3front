@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -16,18 +16,18 @@ body {
   font-size: 16px;
   color: #333;
 }
-`
+`;
 
 // FOOTER
 export const Footer = styled.footer`
   display: flex;
   justify-content: space-around;
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
   text-align: center;
   color: white;
   width: 100%;
   bottom: 0;
-`
+`;
 
 export const MenuList = styled.ul`
   list-style-type: none;
@@ -35,30 +35,28 @@ export const MenuList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
-`
+`;
 
 export const MenuItem = styled.li`
   display: inline;
-  &
-  a{
-    color:#27a1da;
+  & a {
+    color: #27a1da;
     font-weight: lighter;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
   }
-  
-`
+`;
 //HEADER
 export const Header = styled.header`
-  background-color: #00A2FC;
+  background-color: #00a2fc;
   text-align: center;
-  .Logo_Header{
+  .Logo_Header {
     width: 12vw;
     padding: 1vw;
     filter: brightness(0) invert(1);
   }
-`
+`;
 export const SubHeader = styled.div`
   display: flex;
   justify-content: space-around;
@@ -67,21 +65,20 @@ export const SubHeader = styled.div`
   padding: 0.5rem;
   height: 3.5rem;
 
-  &
-  img{
+  & img {
     bottom: 2vw;
   }
-`
+`;
 
 export const Nav = styled.nav`
   padding: 10px;
-`
+`;
 
 // ERROR
 export const Layout404 = styled.div`
   display: flex;
-  font-family: 'Poppins', sans-serif;
-  background-color: #2A56C0;
+  font-family: "Poppins", sans-serif;
+  background-color: #2a56c0;
   color: white;
   text-align: center;
   font-size: 1.5em;
@@ -91,14 +88,13 @@ export const Layout404 = styled.div`
   & img {
     width: 40rem;
   }
-  &
-  a{
+  & a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
   }
-`
+`;
 //INTEGRANTES
 export const CarroselIntegrantes = styled.div`
   display: flex;
@@ -110,12 +106,12 @@ export const CarroselIntegrantes = styled.div`
   & .slide {
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem #666;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     width: 600px;
     height: 600px;
   }
   .slide-escondido {
-  display: none;
+    display: none;
   }
   & .arrow {
     position: absolute;
@@ -131,7 +127,7 @@ export const CarroselIntegrantes = styled.div`
   & .arrow-right {
     right: 1rem;
   }
-  & .arrow:hover { 
+  & .arrow:hover {
     cursor: pointer;
     color: black;
   }
@@ -139,7 +135,6 @@ export const CarroselIntegrantes = styled.div`
     display: flex;
     position: absolute;
     bottom: 1rem;
-    
   }
   & .indicador {
     background-color: white;
@@ -153,9 +148,10 @@ export const CarroselIntegrantes = styled.div`
     cursor: pointer;
   }
   & .indicador-inativo {
-    background-color: #999;}
-    
-    & .descricao {
+    background-color: #999;
+  }
+
+  & .descricao {
     position: absolute;
     bottom: 6%;
     left: 0;
@@ -169,26 +165,24 @@ export const CarroselIntegrantes = styled.div`
     font-size: 0.9rem;
     font-weight: bold;
   }
-
-  `
+`;
 export const CarrosselLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 5rem;
-  
-  &
-  h1{
+
+  & h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #00428C;
+    color: #00428c;
     font-weight: bold;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
-`
+`;
 
 export const DecoracaoDevs = styled.div`
   position: absolute;
@@ -196,7 +190,7 @@ export const DecoracaoDevs = styled.div`
   right: 0;
   opacity: 0.8;
   z-index: -9999;
-  & img{
+  & img {
     width: 30vw;
   }
 `;
@@ -207,7 +201,7 @@ export const DecoracaoDevs2 = styled.div`
   left: 0;
   opacity: 0.8;
   z-index: -9999;
-  & img{
+  & img {
     width: 30vw;
   }
 `;
@@ -219,9 +213,10 @@ export const HomeLayout = styled.div`
   padding: 2rem;
   padding-bottom: 0;
   flex-direction: column;
-  .Rotas{
+  .Rotas {
     text-decoration: none;
-    color: #00428C;
+    color: #00428c;
+    font-size: 120%;
   }
 `;
 export const Faixa = styled.div`
@@ -232,21 +227,56 @@ export const Faixa = styled.div`
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  & h2{
+  & h2 {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+`;
+export const BotaoCentroAutomotivo = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 2rem;
+    & 
+    img {
+      width: 3rem;
+      height: 3rem;
+      padding-bottom: 0.5rem;
+      
+    }
+    .botao{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #00428c;
+      font-weight: bold;
+      padding: 1rem;
+      border: 2px solid #00428c;
+      border-radius: 1rem;
+    }
+    .botao:hover{
+      background-color: #00428c;
+      color: white;
+      &
+      img{
+        filter: brightness(0) invert(1);
+      }
+    }
 `;
 
 //DASHBOARD
 
 export const DashboardLayout = styled.div`
-    display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2em;
   padding: 2rem;
 
-  grid-template-areas: 
+  grid-template-areas:
     "item1 item2 item5"
     "item3 item4 item5";
 
@@ -254,15 +284,16 @@ export const DashboardLayout = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
   }
 
   img:nth-child(1) {
     grid-area: item1;
-    border-radius: 2rem;
   }
 
   img:nth-child(2) {
     grid-area: item2;
+    
   }
 
   img:nth-child(3) {
@@ -275,6 +306,5 @@ export const DashboardLayout = styled.div`
 
   img:nth-child(5) {
     grid-area: item5;
-    border-radius: 2rem;
   }
 `;

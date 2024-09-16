@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Faixa, HomeLayout } from "../../style/styled";
 import Dashboard from "../../components/Dashboard/Dashboard";
+import BotoesCentroAutomotivo from "../../components/BotoesCentroAutomotivo/BotoesCentroAutomotivo";
 
 export default function Home(){
   document.title = "Home";
@@ -18,10 +19,10 @@ export default function Home(){
       </HomeLayout>
       <Faixa>
       <div>
-      <h2>SERVIÇOS DISPONÍVEIS</h2>
+      <h2>SERVIÇOS DISPONÍVEIS NO <b>CENTRO AUTOMOTIVO</b></h2>
     </div>
     </Faixa>
-    
+    <BotoesCentroAutomotivo />
     </div>
     );
   }
