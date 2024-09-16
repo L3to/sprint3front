@@ -87,15 +87,74 @@ export const Layout404 = styled.div`
 //INTEGRANTES
 export const CarroselIntegrantes = styled.div`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 400px;
-  & img {
+  width: 100%;
+  height: 100%;
+  & .slide {
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.5rem #333;
-    width: 100%;
-    height: 100%;}
+    box-shadow: 0 0 0.5rem #666;
+    transition: all 0.3s ease; 
+    width: 600px;
+    height: 600px;
+  }
+  .slide-escondido {
+  display: none;
+  }
+  & .arrow {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    filter: drop-shadow(0px 0px 5px #555);
+    transition: color 0.3s ease;
+  }
+  & .arrow-left {
+    left: 1rem;
+  }
+  & .arrow-right {
+    right: 1rem;
+  }
+  & .arrow:hover { 
+    cursor: pointer;
+    color: black;
+  }
+  & .indicadores {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    
+  }
+  & .indicador {
+    background-color: white;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  & .indicador-inativo {
+    background-color: #999;}
+    
+    & .descricao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
   `
 export const CarrosselLayout = styled.div`
   display: flex;

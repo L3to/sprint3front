@@ -1,6 +1,6 @@
 import { Carrossel } from "../../components/Carrossel/Carrosel";
 
-import { listaCarrosel } from "../../listaCarrossel";
+import { listaCarrossel } from "../../listaCarrossel";
 import { CarrosselLayout } from "../../style/styled";
 
 export default function Equipe() {
@@ -9,7 +9,7 @@ export default function Equipe() {
     <div>
       <CarrosselLayout>
       <h1>NOSSA EQUIPE</h1>
-      <Carrossel imagens={listaCarrosel}/>
+      <Carrossel imagens={listaCarrossel}/>
       </CarrosselLayout>
     </div>
   );
