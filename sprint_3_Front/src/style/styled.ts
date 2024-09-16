@@ -527,10 +527,4 @@ export const LoginLayout = styled.div`
   }
 }
 
-  .desativado{
-    background: #b3b3b3;
-    color: #676767;
-  }
-
-
 `;

@@ -7,6 +7,7 @@ import DamageDetection from "../../assets/img/cardamage.jpg";
 import { Link, To, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+
 export default function Dashboard() {
   const [exibirAviso, setExibirAviso] = useState(false);
   const usuarioLogado = localStorage.getItem("usuarioLogado");
@@ -23,18 +24,7 @@ export default function Dashboard() {
     }
   };
 
-  window.watsonAssistantChatOptions = {
-    integrationID: "4917237a-1f82-4a53-80c3-2e00f47ebd92", 
-    region: "au-syd",
-    serviceInstanceID: "62533943-3488-4541-b5fe-0bd708c9584f", 
-    onLoad: async (instance) => { await instance.render(); }
-  };
 
-  setTimeout(function() {
-    const t = document.createElement('script');
-    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
 
   return (
     <div>

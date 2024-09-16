@@ -5,6 +5,20 @@ import BotoesCentroAutomotivo from "../../components/BotoesCentroAutomotivo/Boto
 import { useEffect, useState } from "react";
 import { useLogout } from "../../components/LoginSignup/useLogout";
 
+window.watsonAssistantChatOptions = {
+  integrationID: "4917237a-1f82-4a53-80c3-2e00f47ebd92", 
+  region: "au-syd",
+  serviceInstanceID: "62533943-3488-4541-b5fe-0bd708c9584f", 
+  onLoad: async (instance: { render: () => unknown; }) => { await instance.render(); }
+};
+
+setTimeout(function() {
+  const t = document.createElement('script');
+  t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+  document.head.appendChild(t);
+});
+
+
 export default function Home() {
   document.title = "Home";
 
@@ -20,7 +34,7 @@ export default function Home() {
 
   const realizarLogout = useLogout(() => {
     setMostrarBoasVindas(false);
-    setUsuarioLogado(""); // Atualiza o estado do usuário logado
+    setUsuarioLogado(""); 
   });
 
   return (
