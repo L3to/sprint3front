@@ -29,7 +29,7 @@ export const Footer = styled.footer`
   margin-top: auto;  
   left: 0;
   top: 100rem;
-  min-height: 8vh; 
+  min-height: 7vh; 
 `;
 
 export const Divisoria = styled.div`
@@ -61,7 +61,7 @@ export const Header = styled.header`
   background-color: #00a2fc;
   text-align: center;
   .Logo_Header {
-    width: 150px;
+    width: 180px;
     padding: 1vw;
     filter: brightness(0) invert(1);
   }
@@ -76,7 +76,7 @@ export const SubHeader = styled.div`
 
   & img {
     bottom: 20px;
-    width: 180px;
+    width: 170px;
     cursor: pointer;
   }
 `;
@@ -245,6 +245,9 @@ export const HomeLayout = styled.div`
     color: #00428c;
     text-decoration: none;
   }
+  .invisivel {
+  visibility: hidden;
+}
 `;
 export const Faixa = styled.div`
   display: flex;
@@ -300,7 +303,7 @@ export const BotaoCentroAutomotivo = styled.div`
 //DASHBOARD
 
 export const DashboardLayout = styled.div`
-  display: grid;
+ display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
   padding: 2rem;
@@ -309,35 +312,74 @@ export const DashboardLayout = styled.div`
     "item1 item2 item5"
     "item3 item4 item5";
 
-  img {
+  /* Configuração das imagens */
+  .container-imagem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .container-imagem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
+    display: block;
+    transition: transform 0.5s;
   }
 
-  img:nth-child(1) {
+  .container-imagem:nth-child(1) {
     grid-area: item1;
   }
 
-  img:nth-child(2) {
+  .container-imagem:nth-child(2) {
     grid-area: item2;
-    
   }
 
-  img:nth-child(3) {
+  .container-imagem:nth-child(3) {
     grid-area: item3;
   }
 
-  img:nth-child(4) {
+  .container-imagem:nth-child(4) {
     grid-area: item4;
   }
 
-  img:nth-child(5) {
+  .container-imagem:nth-child(5) {
     grid-area: item5;
+    grid-column: span 2; 
   }
- 
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .informacoes {
+    text-align: center;
+  }
+
+  /* Efeito de hover nas imagens */
+  .container-imagem:hover img {
+    transform: scale(1.1);
+  }
+
+  .container-imagem:hover .overlay {
+    opacity: 1;
+  }
 `;
+
 
 //LOGIN
 export const BackgroundLogin = styled.div`
@@ -401,7 +443,7 @@ export const LoginLayout = styled.div`
   width: 400px;
   height: 50px;
   border: none;
-  color: white;
+  color: black;
   background: transparent;
   outline: none;
   font-size: 24px;
@@ -436,4 +478,28 @@ export const LoginLayout = styled.div`
   font-weight: bold;
   cursor: pointer;
 }
+.error-message {
+  color: red;
+  background-color: #fdd;
+  border: 1px solid red;
+  padding: 10px;
+  margin-top: 10px;
+  animation: desaparecer 3s ease-out forwards;
+}
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+  .desativado{
+    background: #b3b3b3;
+    color: #676767;
+  }
+
+
 `;
