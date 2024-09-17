@@ -1,8 +1,6 @@
-# Sprint 3 - Projeto LVS
+# Sprint 3
 
 Confira o vídeo do Projeto aqui: [Link para o Vídeo](https://youtu.be/j04An_uHJBY)
-
-Seja bem-vindo ao Projeto LVS! Este é um aplicativo web inovador, projetado para facilitar a solicitação de atendimento online a oficinas cadastradas. Utilizamos tecnologias modernas para oferecer uma interface intuitiva e responsiva.
 
 ## Sumário
 
