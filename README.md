@@ -23,6 +23,4 @@ Na Sprint 3, desenvolvemos uma aplicação web que futaramente permitirá aos us
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática para maior segurança e robustez no código.
 - **Styled-Components**: Biblioteca que permite escrever CSS dentro do JavaScript, facilitando a criação e manutenção de estilos.
 
-## Reconhecimentos
-
-Este projeto é fruto de esforços acadêmicos dos alunos Luiz Felipe Campos da Silva, Alice Teixeira Caldeira e Luiz Sadao Kamada. Agradecemos à FIAP e aos seus professores, especialmente ao professor Alexandre Carlos de Jesus, pelo suporte valioso na realização desta aplicação.
+Este projeto é fruto de esforços acadêmicos dos alunos Luiz Felipe Campos da Silva, Alice Teixeira Caldeira e Luiz Sadao Kamada. Agradecemos à FIAP e aos seus professores!
