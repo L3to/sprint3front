@@ -8,10 +8,10 @@ export default function CabecalhoMenu(){
     return(
       <div>
         <SubHeader>
-            <img src={PortoSeguro} alt="" />
-            <img src={PortoSaude} alt="" />
-            <img src={PortoServico} alt="" />
-            <img src={PortoBank} alt="" />
+            <img src={PortoSeguro} alt="Logo Porto Seguro" />
+            <img src={PortoSaude} alt="Logo Porto Saúde" />
+            <img src={PortoServico} alt="Logo Porto Serviço" />
+            <img src={PortoBank} alt="Logo Porto Bank" />
         </SubHeader>
       </div>
     );
