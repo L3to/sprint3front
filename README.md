@@ -2,13 +2,6 @@
 
 Confira o vídeo do Projeto aqui: [Link para o Vídeo](https://youtu.be/j04An_uHJBY)
 
-## Sumário
-
-- [Visão Geral](#visão-geral)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Empregadas](#tecnologias-empregadas)
-- [Reconhecimentos](#reconhecimentos)
-
 ## Visão Geral
 
 Na Sprint 3, desenvolvemos uma aplicação web que futaramente permitirá aos usuários solicitarem um orçamento rápido de reparos em seus carros todo calculado por IA. A aplicação é construída com React, utilizando o React Router para navegação, é estilizada com Styled Components, e a construção é gerenciada pelo Vite. Futuramente, planejamos integrar um sistema de análise de dados em Google Cloud (Vertex AI AutoML) para ampliar as funcionalidades da aplicação.
