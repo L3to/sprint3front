@@ -30,6 +30,9 @@ export const Footer = styled.footer`
   left: 0;
   top: 100rem;
   min-height: 7vh; 
+  @media (max-width: 1048px) {
+      display: none;
+    }
 `;
 
 export const Divisoria = styled.div`
@@ -40,7 +43,6 @@ export const Divisoria = styled.div`
 
 
 export const RodapeMenuItens = styled.ul`
-  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -64,7 +66,17 @@ export const Header = styled.header`
     width: 180px;
     padding: 1vw;
     filter: brightness(0) invert(1);
+    @media (max-width: 1000px) {
+      width: 200px;
+    }
+    
   }
+  @media (max-width: 1000px) {
+      min-height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 `;
 export const SubHeader = styled.div`
   display: flex;
@@ -78,6 +90,9 @@ export const SubHeader = styled.div`
     bottom: 20px;
     width: 170px;
     cursor: pointer;
+  }
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 
@@ -108,6 +123,9 @@ export const Layout404 = styled.div`
     display: block;
     border: 2px solid white; 
     border-radius: 5px; 
+    @media (max-width: 450px) {
+      font-size: 0.7em;
+    }
   }
   .btnhover:hover {
     background-color: white;
@@ -126,12 +144,21 @@ export const CarroselIntegrantes = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  
   & .slide {
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem #666;
     transition: all 0.3s ease;
     width: 600px;
     height: 600px;
+    @media (max-width: 1048px) {
+    width:400px;
+    height: 400px;
+    }
+    @media (max-width: 400px) {
+      width:300px;
+      height:300px;
+    }
   }
   .slide-escondido {
     display: none;
@@ -195,12 +222,15 @@ export const CarrosselLayout = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 5rem;
-
+  @media (max-width: 1048px) {
+    padding: 0;
+    }
   & h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #00428c;
     font-weight: bold;
+    
   }
   h2 {
     font-size: 1.5rem;
@@ -213,9 +243,11 @@ export const DecoracaoDevs = styled.div`
   right: 0;
   opacity: 0.8;
   z-index: -9999;
+  
   & img {
     width: 30vw;
   }
+ 
 `;
 
 export const DecoracaoDevs2 = styled.div`
@@ -240,10 +272,20 @@ export const HomeLayout = styled.div`
     text-decoration: none;
     color: #00428c;
     font-size: 120%;
+    @media (max-width: 1048px) {
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      padding-top: 0;
+    }
   }
   .Rotas a {
     color: #00428c;
     text-decoration: none;
+  }
+  .temporario {
+    @media (max-width: 450px) {
+   display: none; }
   }
   .invisivel {
   visibility: hidden;
@@ -272,7 +314,12 @@ export const Faixa = styled.div`
   & h2 {
     font-size: 1.5rem;
     font-weight: lighter;
+    @media (max-width: 650px) {
+      font-size: 1rem;
+
+    }
   }
+  
 `;
 export const BotaoCentroAutomotivo = styled.div`
     display: flex;
@@ -281,7 +328,13 @@ export const BotaoCentroAutomotivo = styled.div`
     align-items: center;
     gap: 5%;
     padding: 2rem;
-  
+    @media (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 0.2rem; 
+    padding: 0;
+    }
     & 
     img {
       width: 3rem;
@@ -320,7 +373,11 @@ export const DashboardLayout = styled.div`
   gap: 2em;
   padding: 2rem;
   max-width: 1900px;
-
+  @media (max-width: 650px) {
+      gap: 1rem;
+      padding: 1rem;
+      height: 300px;
+    }
   grid-template-areas:
     "item1 item2 item5"
     "item3 item4 item5";
@@ -344,6 +401,7 @@ export const DashboardLayout = styled.div`
 
   .container-imagem:nth-child(1) {
     grid-area: item1;
+    
   }
 
   .container-imagem:nth-child(2) {
@@ -361,6 +419,7 @@ export const DashboardLayout = styled.div`
   .container-imagem:nth-child(5) {
     grid-area: item5;
     grid-column: span 2; 
+    
   }
 
   .overlay {
@@ -408,6 +467,10 @@ export const AvisoLogin = styled.div`
   font-size: 2rem;
   padding: 1rem;
   border-radius: 1rem;
+  @media (max-width: 1000px) {
+    width: 20rem;
+    font-size: 1rem;
+        }
   }
 `;
 
@@ -419,6 +482,9 @@ height: 80vh;
 background: linear-gradient(135deg, #007bff 0%, #0062cc 50%, #003d99 100%);;
 justify-content: center;
 align-items: center;
+@media (max-width: 1050px) {
+      min-height: 100vh;
+    }
 `
 export const LoginLayout = styled.div`
 .login-container {
@@ -429,6 +495,12 @@ export const LoginLayout = styled.div`
   width: 900px;
   padding-bottom: 30px;
   border-radius: 10px;
+  @media (max-width: 1000px) {
+    width: 500px;
+    }
+    @media (max-width: 500px) {
+    width: 350px;
+    }
 }
 .headerlogin {
   display: flex;
@@ -442,12 +514,17 @@ export const LoginLayout = styled.div`
   font-size: 48px;
   font-weight: bold;
   color: #0056b3;
+  @media (max-width: 500px) {
+    font-size: 30px;   }
 }
 .underline {
   width: 61px;
   height: 6px;
   background: #0056b3;
   border-radius: 10px;
+  @media (max-width: 500px) {
+    width: 40px;
+    }
 }
 .inputs {
   display: flex;
@@ -464,11 +541,20 @@ export const LoginLayout = styled.div`
   background: #eaeaea;
   border-radius: 10px;
   padding: 0px 20px;
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 40px;    }
+  
 }
 .input img{
   margin: 0px 30px;
   width: 50px;
   height: 50px;
+  @media (max-width: 500px) {
+    width: 90px;
+    height: 30px; 
+    margin: 0px 15px; 
+    }
 }
 .input input{
   width: 400px;
@@ -478,23 +564,18 @@ export const LoginLayout = styled.div`
   background: transparent;
   outline: none;
   font-size: 24px;
+  @media (max-width: 500px) {
+    width: 100px;
+    height: 40px;    }
 }
 
-.forgot-password {
-  font-size: 24px;
-  color: #0056b3;
-  margin-top: 30px;
-  padding-left: 62px;
-}
-.forgot-password span {
-  font-weight: bold;
-  cursor: pointer;
-}
+
 .submit-container{
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 60px;
+  
 }
 .submit {
   display: flex;
@@ -508,6 +589,10 @@ export const LoginLayout = styled.div`
   color: white;
   font-weight: bold;
   cursor: pointer;
+  @media (max-width: 500px) {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;    }
 }
 .error-message {
   color: red;

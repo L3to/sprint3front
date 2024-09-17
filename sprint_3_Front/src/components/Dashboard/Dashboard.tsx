@@ -1,12 +1,11 @@
+import { useState } from "react";
+import { Link, To, useNavigate } from "react-router-dom";
 import ConsertoCarro from "../../assets/img/consertocarro.jpg";
 import Computador from "../../assets/img/hcomputador.png";
 import Equipe from "../../assets/img/equipe.jpg";
 import { AvisoLogin, DashboardLayout } from "../../style/styled";
 import Chatbot from "../../assets/img/chatbotzinho.png";
 import DamageDetection from "../../assets/img/cardamage.jpg";
-import { Link, To, useNavigate } from "react-router-dom";
-import { useState } from "react";
-
 
 export default function Dashboard() {
   const [exibirAviso, setExibirAviso] = useState(false);
@@ -15,29 +14,27 @@ export default function Dashboard() {
 
   const handleClick = (path: To) => {
     if (usuarioLogado) {
-      navigate(path);
-    } else {
       setExibirAviso(true);
       setTimeout(() => {
         setExibirAviso(false);
       }, 3000);
+    } else {
+      navigate(path);
     }
   };
-
-
 
   return (
     <div>
       <AvisoLogin>
-        {exibirAviso && (
-          <div className="aviso">
-            <p>Você já está logado!</p>
-          </div>
-        )}
+      {exibirAviso && (
+        <div className="aviso">
+          <p>Você já está logado!</p>
+        </div>
+      )}
       </AvisoLogin>
       <DashboardLayout>
         <div className="container-imagem">
-          <Link className="hoverimage" to={"/login"} onClick={() => handleClick("/login")}>
+          <Link className="hoverimage" onClick={() => handleClick("/login")} to={""}>
             <img src={Computador} alt="Computador" />
             <div className="overlay">
               <div className="informacoes">
@@ -48,8 +45,8 @@ export default function Dashboard() {
           </Link>
         </div>
         <div className="container-imagem">
-          <Link className="hoverimage" to={"/modeloIA"}>
-            <img src={DamageDetection} alt="Detecção de danos em automóveis" />
+          <Link className="hoverimage" to={"iamodelo"}>
+            <img src={DamageDetection} alt="Damage Detection" />
             <div className="overlay">
               <div className="informacoes">
                 <h3>Conheça sobre nosso modelo de deteccção automática!</h3>
@@ -81,16 +78,16 @@ export default function Dashboard() {
           </Link>
         </div>
         <div className="container-imagem">
-          <Link className="hoverimage" to={""}>
+          <Link className="hoverimage" to={"/chatbot"}>
             <img src={Chatbot} alt="Chatbot" />
             <div className="overlay">
               <div className="informacoes">
                 <h3>Oi, eu sou a Turbina! Venha conversar comigo!</h3>
-                <p>Estou no canto inferior direito da sua tela!</p>
               </div>
             </div>
           </Link>
         </div>
       </DashboardLayout>
     </div>
-  )};
+  );
+}
