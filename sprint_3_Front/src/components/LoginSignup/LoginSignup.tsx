@@ -7,7 +7,9 @@ import { useEffect, useState } from "react";
 
 export const LoginSignup = () => {
   const navigate = useNavigate();
-  const [acao, setAcao] = useState(() => localStorage.getItem("acao") || "Login");
+  const [acao, setAcao] = useState(
+    () => localStorage.getItem("acao") || "Login"
+  );
   const [usuario, setUsuario] = useState("");
   const [emailUsuario, setEmailUsuario] = useState("");
   const [senha, setSenha] = useState("");
@@ -16,7 +18,7 @@ export const LoginSignup = () => {
     return storedUsuarios ? JSON.parse(storedUsuarios) : [];
   });
 
-  const [error, setError] = useState(""); 
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const usuarioLogado = localStorage.getItem("usuarioLogado");
@@ -33,8 +35,6 @@ export const LoginSignup = () => {
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
   }, [usuarios]);
 
-
-
   const validateEmail = (email: string) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
@@ -42,7 +42,7 @@ export const LoginSignup = () => {
   const handleCadastro = () => {
     if (!validateEmail(emailUsuario)) {
       setError("Por favor, insira um e-mail válido.");
-      setTimeout(() => setError(""), 3000); 
+      setTimeout(() => setError(""), 3000);
       return;
     }
     if (usuario && emailUsuario && senha) {
@@ -54,7 +54,7 @@ export const LoginSignup = () => {
       setError("");
     } else {
       setError("Por favor, preencha todos os campos.");
-      setTimeout(() => setError(""), 3000); 
+      setTimeout(() => setError(""), 3000);
     }
   };
 
@@ -64,11 +64,14 @@ export const LoginSignup = () => {
       setTimeout(() => setError(""), 3000);
       return;
     }
-    const usuarioEncontrado = usuarios.find((user: { email: string; senha: string; }) => user.email === emailUsuario && user.senha === senha);
+    const usuarioEncontrado = usuarios.find(
+      (user: { email: string; senha: string }) =>
+        user.email === emailUsuario && user.senha === senha
+    );
     if (usuarioEncontrado) {
-        localStorage.setItem("usuarioLogado", usuarioEncontrado.usuario);
-      navigate("/"); 
-      setError(""); 
+      localStorage.setItem("usuarioLogado", usuarioEncontrado.usuario);
+      navigate("/");
+      setError("");
     } else {
       setError("Usuário ou senha incorretos.");
       setTimeout(() => setError(""), 3000);
@@ -88,47 +91,41 @@ export const LoginSignup = () => {
               {acao === "Cadastro" && (
                 <div className="input">
                   <img src={user} alt="" />
-                  <input 
-                    type="text" 
-                    placeholder="Usuário" 
-                    value={usuario} 
-                    onChange={(e) => setUsuario(e.target.value)} 
+                  <input
+                    type="text"
+                    placeholder="Usuário"
+                    value={usuario}
+                    onChange={(e) => setUsuario(e.target.value)}
                   />
                 </div>
               )}
               <div className="input">
                 <img src={email} alt="" />
-                <input 
-                  type="email" 
-                  placeholder="Email" 
-                  value={emailUsuario} 
-                  onChange={(e) => setEmailUsuario(e.target.value)} 
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={emailUsuario}
+                  onChange={(e) => setEmailUsuario(e.target.value)}
                 />
               </div>
               <div className="input">
                 <img src={lock} alt="" />
-                <input 
-                  type="password" 
-                  placeholder="Senha" 
-                  value={senha} 
-                  onChange={(e) => setSenha(e.target.value)} 
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  value={senha}
+                  onChange={(e) => setSenha(e.target.value)}
                 />
               </div>
               {error && <div className="error-message">{error}</div>}
             </div>
             <div className="submit-container">
               {acao === "Login" ? (
-                <div
-                  className="submit"
-                  onClick={handleLogin}
-                >
+                <div className="submit" onClick={handleLogin}>
                   Login
                 </div>
               ) : (
-                <div
-                  className="submit"
-                  onClick={handleCadastro}
-                >
+                <div className="submit" onClick={handleCadastro}>
                   Cadastro
                 </div>
               )}
@@ -144,5 +141,4 @@ export const LoginSignup = () => {
       </BackgroundLogin>
     </div>
   );
-  
 };

@@ -4,14 +4,14 @@ import Cabecalho from "./components/Cabecalho/Cabecalho";
 import { GlobalStyle } from "./style/styled";
 
 function App() {
-    return (
-        <div>
-        <GlobalStyle/>
-        <Cabecalho/>
-            <Outlet/>
-        <Rodape/>
-        </div>
-    );
+  return (
+    <div>
+      <GlobalStyle />
+      <Cabecalho />
+      <Outlet />
+      <Rodape />
+    </div>
+  );
 }
 
 export default App;

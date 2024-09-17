@@ -20,7 +20,7 @@ export default function Home() {
 
   const realizarLogout = useLogout(() => {
     setMostrarBoasVindas(false);
-    setUsuarioLogado(""); 
+    setUsuarioLogado("");
   });
 
   return (
@@ -30,22 +30,30 @@ export default function Home() {
           <Link to="/">
             <b>Home</b>
           </Link>
-          
-          &nbsp;/ Turbina
-          &nbsp;<b className="temporario">
-        
-            {mostrarBoasVindas && usuarioLogado && `Bem-vindo, ${usuarioLogado}!`}
-            {mostrarBoasVindas && !usuarioLogado && <span className="invisivel">Bem-vindo!</span>}
+          &nbsp;/ Turbina &nbsp;
+          <b className="temporario">
+            {mostrarBoasVindas &&
+              usuarioLogado &&
+              `Bem-vindo, ${usuarioLogado}!`}
+            {mostrarBoasVindas && !usuarioLogado && (
+              <span className="invisivel">Bem-vindo!</span>
+            )}
           </b>
           &nbsp;
-          {usuarioLogado && mostrarBoasVindas && <a className="btnSair" onClick={realizarLogout}>Sair?</a>}
+          {usuarioLogado && mostrarBoasVindas && (
+            <a className="btnSair" onClick={realizarLogout}>
+              Sair?
+            </a>
+          )}
         </p>
         <div className="dashboard">
-        <Dashboard />
+          <Dashboard />
         </div>
       </HomeLayout>
       <Faixa>
-          <h2>SERVIÇOS DISPONÍVEIS NO <b>CENTRO AUTOMOTIVO</b></h2>
+        <h2>
+          SERVIÇOS DISPONÍVEIS NO <b>CENTRO AUTOMOTIVO</b>
+        </h2>
       </Faixa>
       <BotoesCentroAutomotivo />
     </div>

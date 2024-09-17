@@ -1,12 +1,11 @@
 import { LoginSignup } from "../../components/LoginSignup/LoginSignup";
 
-
-export default function Login(){
+export default function Login() {
   document.title = "Página de Login";
 
-    return(
-      <div>
-        <LoginSignup/>
+  return (
+    <div>
+      <LoginSignup />
     </div>
-    );
-  }
+  );
+}
