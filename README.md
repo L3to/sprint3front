@@ -9,13 +9,11 @@ Seja bem-vindo ao Projeto LVS! Este é um aplicativo web inovador, projetado par
 - [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Empregadas](#tecnologias-empregadas)
-- [Pré-requisitos](#pré-requisitos)
-- [Instruções de Instalação](#instruções-de-instalação)
 - [Reconhecimentos](#reconhecimentos)
 
 ## Visão Geral
 
-Na Sprint 3, desenvolvemos uma aplicação web que permite aos usuários solicitar atendimento online para oficinas registradas, fornecendo informações detalhadas como o nome da oficina, preços sugeridos e problemas relacionados. A aplicação é construída com React para uma interface de usuário moderna, utiliza o React Router para navegação, é estilizada com Styled Components, e a construção é gerenciada pelo Vite. Futuramente, planejamos integrar um sistema de análise de dados em Google Cloud (Vertex AI AutoML) para ampliar as funcionalidades da aplicação.
+Na Sprint 3, desenvolvemos uma aplicação web que futaramente permitirá aos usuários solicitarem um orçamento rápido de reparos em seus carros todo calculado por IA. A aplicação é construída com React, utilizando o React Router para navegação, é estilizada com Styled Components, e a construção é gerenciada pelo Vite. Futuramente, planejamos integrar um sistema de análise de dados em Google Cloud (Vertex AI AutoML) para ampliar as funcionalidades da aplicação.
 
 ## Funcionalidades
 
@@ -28,34 +26,11 @@ Na Sprint 3, desenvolvemos uma aplicação web que permite aos usuários solicit
 
 ## Tecnologias Empregadas
 
-- **React**: Biblioteca para criação de interfaces de usuário.
-- **React Router**: Gerenciador de rotas para navegação.
-- **Vite**: Ferramenta de build para projetos web.
-- **TypeScript**: Adiciona tipagem estática ao JavaScript.
-- **Styled-Components**: Facilita a estilização CSS.
-
-## Pré-requisitos
-
-- Node.js e NPM instalados.
-
-## Instruções de Instalação
-
-Para configurar o projeto localmente, siga os passos abaixo:
-
-| Passo | Descrição |
-|---|---|
-| 1. **Clone o repositório** | 
-    ```bash
-    git clone https://github.com/L3to/sprint3front.git
-    ``` |
-| 2. **Instale as dependências** |
-    ```bash
-    npm install
-    ``` |
-| 3. **Inicie o servidor de desenvolvimento** |
-    ```bash
-    npm run dev
-    ``` |
+- **React**: Framework poderoso para a construção de interfaces interativas e dinâmicas.
+- **React Router**: Biblioteca essencial para a navegação fluida entre páginas e componentes.
+- **Vite**: Ferramenta moderna e rápida para otimização e construção de projetos front-end.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática para maior segurança e robustez no código.
+- **Styled-Components**: Biblioteca que permite escrever CSS dentro do JavaScript, facilitando a criação e manutenção de estilos.
 
 ## Reconhecimentos
 
